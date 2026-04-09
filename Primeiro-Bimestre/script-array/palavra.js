@@ -1,0 +1,2 @@
+letras = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+document.writeln(letras[9] + letras[0] + letras[21] + letras[0] + letras[18] + letras[2] + letras[17] + letras[8] + letras[15]+ letras[19])
