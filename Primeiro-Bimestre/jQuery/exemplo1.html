@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Parágrafos com jQuery</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        .paragrafo {
+            font-size: 18px;
+            color: black;
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+            transition: 0.3s;
+        }
+
+        .ativo {
+            color: white;
+            background-color: darkblue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <p class="paragrafo">Parágrafo 1</p>
+    <p class="paragrafo">Parágrafo 2</p>
+
+    <script>
+        $(function() {
+            $(".paragrafo").hover(
+                function() {
+                    $(this).addClass("ativo");
+                },
+                function() {
+                    $(this).removeClass("ativo");
+                }
+            );
+        });
+    </script>
+
+</body>
+</html>
